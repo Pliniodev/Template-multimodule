@@ -15,4 +15,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "Template-multimodule"
 include(":app")
+include(":feature")
  
