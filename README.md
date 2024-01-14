@@ -1,5 +1,6 @@
 Template multimodulo
 - compose
-- ktlint - workflow
+- ktlint
 - build-src
 - pre-compiled-plugin
+- material3
