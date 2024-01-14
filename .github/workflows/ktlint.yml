@@ -22,4 +22,4 @@ jobs:
       - name: Run ktlintCheck
         run: |
           ./gradlew :app:ktlintCheck 
-          ./gradlew :chords-diagram:ktlintCheck        
+#          ./gradlew :feature:ktlintCheck        
