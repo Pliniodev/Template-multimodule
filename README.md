@@ -1,4 +1,4 @@
-Template multimodulo
+Template multimodulo, um template simples com tecnologias que mais uso pré-configuradas.
 - buildSrc
 - pre-compiled-plugin
 - compose
