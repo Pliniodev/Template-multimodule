@@ -1,4 +1,4 @@
-Template multimodulo, um template simples com tecnologias que mais uso pré-configuradas.
+A simple template with technologies that I use most, preconfigured.
 - buildSrc
 - pre-compiled-plugin
 - compose
