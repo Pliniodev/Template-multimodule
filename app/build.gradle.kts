@@ -28,7 +28,8 @@ dependencies {
     implementation(libs.lyricist)
     implementation(libs.lyricist.processor)
     ksp (libs.lyricist.processor)
-    
+
+    // test
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.ext.junit)
     androidTestImplementation(libs.espresso.core)
@@ -40,4 +41,5 @@ dependencies {
 
 ksp {
     arg("lyricist.internalVisibility", "true")
+    arg("lyricist.generateStringsProperty", "true")
 }
