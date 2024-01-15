@@ -42,7 +42,7 @@ jobs:
       
       # Execute unit tests
       - name: Unit tests
-        run: .gradlew testDebugUnitTest
+        run: ./gradlew testDebugUnitTest
       
       - name: Android Test report
         uses: asadmansr/android-test-report-action@v1.2.0
