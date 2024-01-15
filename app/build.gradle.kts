@@ -1,5 +1,6 @@
 plugins {
     id("dev.pliniodev.application")
+    id("com.google.devtools.ksp") version libs.versions.ksp
 }
 
 android {
@@ -20,6 +21,15 @@ dependencies {
     implementation(libs.ui.graphics)
     implementation(libs.ui.tooling.preview)
     implementation(libs.material3)
+    implementation(libs.material3)
+    implementation(libs.ksp)
+
+    // lyricist
+    implementation(libs.lyricist)
+    implementation(libs.lyricist.processor)
+    ksp(libs.lyricist.processor)
+
+    // test
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.ext.junit)
     androidTestImplementation(libs.espresso.core)
@@ -27,4 +37,9 @@ dependencies {
     androidTestImplementation(libs.ui.test.junit4)
     debugImplementation(libs.ui.tooling)
     debugImplementation(libs.ui.test.manifest)
+}
+
+ksp {
+    arg("lyricist.internalVisibility", "true")
+    arg("lyricist.generateStringsProperty", "true")
 }

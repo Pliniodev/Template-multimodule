@@ -21,6 +21,18 @@ android {
         }
     }
 
+    kotlin {
+        sourceSets.release {
+            kotlin.srcDir("build/generated/ksp/release/kotlin")
+        }
+        sourceSets.debug {
+            kotlin.srcDir("build/generated/ksp/debug/kotlin")
+        }
+        sourceSets.test {
+            kotlin.srcDir("build/generated/ksp/test/kotlin")
+        }
+    }
+
     buildTypes {
         release {
             isMinifyEnabled = false

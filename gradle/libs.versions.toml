@@ -13,6 +13,8 @@ ktlint-version = "11.6.0"
 appcompat = "1.6.1"
 material = "1.11.0"
 materia3 = "1.1.2"
+ksp = "1.9.21-1.0.15"
+lyricist = "1.4.2"
 
 [libraries]
 build-gradle = { module = "com.android.tools.build:gradle", version.ref = "android-gradle" }
@@ -31,6 +33,13 @@ ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 material3 = { group = "androidx.compose.material3", name = "material3", version.ref = "materia3" }
 appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+
+#KSP
+ksp = { group = "com.google.devtools.ksp", name = "symbol-processing-api", version.ref = "ksp"}
+
+#Lyricist
+lyricist = { module = "cafe.adriel.lyricist:lyricist", version.ref = "lyricist" }
+lyricist-processor = { module = "cafe.adriel.lyricist:lyricist-processor", version.ref = "lyricist" }
 
 #Tests
 junit = { group = "junit", name = "junit", version.ref = "junit" }
