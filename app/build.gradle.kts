@@ -27,7 +27,7 @@ dependencies {
     // lyricist
     implementation(libs.lyricist)
     implementation(libs.lyricist.processor)
-    ksp (libs.lyricist.processor)
+    ksp(libs.lyricist.processor)
 
     // test
     testImplementation(libs.junit)
