@@ -1,5 +1,6 @@
 plugins {
     id("dev.pliniodev.application")
+    id("com.google.devtools.ksp") version libs.versions.ksp
 }
 
 android {
@@ -20,6 +21,9 @@ dependencies {
     implementation(libs.ui.graphics)
     implementation(libs.ui.tooling.preview)
     implementation(libs.material3)
+    implementation(libs.material3)
+    implementation(libs.ksp)
+    
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.ext.junit)
     androidTestImplementation(libs.espresso.core)
